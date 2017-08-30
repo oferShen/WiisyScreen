@@ -1,0 +1,17 @@
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\bin\Debug\MacrosApp.exe.config
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\bin\Debug\MacrosApp.exe
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\bin\Debug\MacrosApp.pdb
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\bin\Debug\winMacros.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\bin\Debug\InputSimulator.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\bin\Debug\winMacros.pdb
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MacrosApp.csprojResolveAssemblyReference.cache
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MainWindow.g.cs
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\App.g.cs
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MacrosApp_MarkupCompile.cache
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MacrosApp_MarkupCompile.lref
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MainWindow.baml
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MacrosApp.g.resources
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MacrosApp.Properties.Resources.resources
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MacrosApp.csproj.GenerateResource.Cache
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MacrosApp.exe
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\MacrosApp\obj\Debug\MacrosApp.pdb

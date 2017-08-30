@@ -1,0 +1,126 @@
+﻿<UserControl x:Name="userControl" x:Class="WiisyScreen.SettingsCustomTabControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WiisyScreen"
+             xmlns:converters="clr-namespace:WiisyScreen.Utils"
+             mc:Ignorable="d" Height="360.287" Width="455.024" Foreground="{x:Null}" Background="#FF5D5959">
+    <TabControl BorderBrush="#FF5D5959" Background="#FF353333" TabStripPlacement="Left" Canvas.Top="40" Height="{Binding Height, ElementName=userControl}" Width="{Binding Width, ElementName=userControl}" Padding="0">
+        <TabControl.Resources>
+            <Style TargetType="TabItem" >
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="TabItem">
+                            <Border Name="Border" BorderThickness="0,0,0,0" BorderBrush="#FF353333" CornerRadius="0,0,0,0" Margin="0" Width="140" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top">
+                                <Canvas x:Name="canvasTab">
+                                    <Image Height="30" Width="29" Canvas.Left="4" Canvas.Top="6" Source="{TemplateBinding Tag}" />
+                                    <ContentPresenter x:Name="ContentSite"
+                                            TextBlock.TextAlignment="Left"
+                                            TextBlock.FontSize="14"
+                                            TextBlock.Foreground="#FFCBCBCB"
+                                            TextBlock.FontFamily="Comic Sans MS"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                            ContentSource="Header"
+                                            Margin="0" Canvas.Left="43" Height="20" Width="87" Canvas.Top="10"/>
+                                </Canvas>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter TargetName="Border" Property="Background" Value="#FF353333" />
+                                </Trigger>
+                                <Trigger Property="IsSelected" Value="False">
+                                    <Setter TargetName="Border" Property="Background" Value="#FF5D5959" />
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="Border" Property="Background" Value="#FF353333" />
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </TabControl.Resources>
+        <TabItem x:Name="tabItemGeneral"  Header="General" Margin="0" Background="{x:Null}" Padding="0" UseLayoutRounding="False">
+            <TabItem.Tag>
+                <ImageSource>Resources/wrench-brightBlue.png</ImageSource>
+            </TabItem.Tag>
+            <ScrollViewer>
+                <StackPanel>
+                    <Grid Height="76" Background="#FFAC5656">
+                        <Label x:Name="labelCalibration" Content="Calibration" FontWeight="Bold" FontFamily="Comic Sans MS" HorizontalContentAlignment="Stretch" Padding="0" Foreground="#FFCBCBC8" VerticalAlignment="Top" RenderTransformOrigin="0.627,-3.331" Margin="41,9,157,0" FontSize="16" FontStyle="Italic"/>
+                        <Rectangle Fill="#FFF4F4F5" Stroke="Black"  Height="5" VerticalAlignment="Top" Width="147" Margin="132,19,15,0"/>
+                        <Rectangle Fill="#FFF4F4F5" Stroke="Black"  Height="5" VerticalAlignment="Top" Width="26" Margin="7,18,261,0"/>
+                        <Button x:Name="buttonCalibrate" Content="Calibrate" Click="buttonCalibrate_Click"  VerticalAlignment="Top" Margin="10,40,207,0" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+                        <Label x:Name="labelWiiConnectStatus" Content="WiiMoteState" FontWeight="Bold" FontFamily="Comic Sans MS" HorizontalContentAlignment="Right" Padding="0" Foreground="#FFCBCBC8" VerticalAlignment="Top" Margin="109,43,32,0"/>
+                    </Grid>
+                    <Grid Height="84" Background="#FF8B3D3D" VerticalAlignment="Top">
+                        <Label x:Name="labelSofwere" Content="Softwere" FontWeight="Bold" FontFamily="Comic Sans MS" HorizontalContentAlignment="Stretch" Padding="0" Foreground="#FFCBCBC8" VerticalAlignment="Top" RenderTransformOrigin="0.627,-3.331" Margin="41,9,157,0" FontSize="16" FontStyle="Italic"/>
+                        <Rectangle Fill="#FFF4F4F5" Stroke="Black"  Height="5" VerticalAlignment="Top" Width="164" Margin="120,19,10,0"/>
+                        <Rectangle Fill="#FFF4F4F5" Stroke="Black"  Height="5" VerticalAlignment="Top" Width="26" Margin="7,18,261,0"/>
+                        <CheckBox x:Name="checkBoxSaveData" Content="Save Data On Exit" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" IsChecked="True" Foreground="#FFCBCBC8" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+                        <Button x:Name="buttonResrote" Content="Restore Factory Apps Container" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" Width="274" Click="buttonResrote_Click" FontFamily="Comic Sans MS" FontWeight="Bold"/>
+                    </Grid>
+                    <Grid Height="120" Background="#FF932B2B">
+                        <Border x:Name="borderScreenShots" BorderThickness="1,1,1,1" CornerRadius="5,5,5,5" Canvas.Top="269" 
+                            Width="223" Height="21" BorderBrush="#FF969696" Margin="10,55,61,0" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <Canvas Width="{Binding Width, ElementName=borderScreenShots}" Height="{Binding Height, ElementName=borderScreenShots}" VerticalAlignment="Top">
+                                <Image x:Name="imageScreenShotsFolder2" Source="Resources/foldericon.png" 
+                                    Width="{Binding ActualWidth, ConverterParameter=0.1, Converter={converters:PercentageConverter}, ElementName=borderScreenShots}"
+                                    Height="18" Canvas.Left="2" Canvas.Top="1"/>
+                                <TextBlock x:Name="textBlockScreenShotsPath" 
+                                    Canvas.Left="{Binding ActualWidth, ConverterParameter=0.11, Converter={converters:PercentageConverter}, ElementName=borderScreenShots}"
+                                    Width="{Binding ActualWidth, ConverterParameter=0.89, Converter={converters:PercentageConverter}, ElementName=borderScreenShots}"
+                                    TextWrapping="Wrap" Text="ScreenShotsFolder" RenderTransformOrigin="0.5,0.5" Height="17" FontFamily="Comic Sans MS" Canvas.Top="2" Foreground="#FFCBCBC8" FontSize="10" VerticalAlignment="Top" />
+                            </Canvas>
+                        </Border>
+                        <Label x:Name="labelScreenshotFolder" Content="Screenshots Folder" Canvas.Left="10" Canvas.Top="246" FontWeight="Bold" FontFamily="Comic Sans MS" HorizontalContentAlignment="Right" Padding="0" Foreground="#FFCBCBC8" Margin="14,36,167,0" VerticalAlignment="Top"/>
+                        <Button x:Name="buttonGeneratePDF" Content="Generate PDF" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="274" Background="#FFCBCBCB" FontFamily="Comic Sans MS" Click="buttonGeneratePDF_Click" FontWeight="Bold"/>
+                        <Label x:Name="labelPictures" Content="Pictures" FontWeight="Bold" FontFamily="Comic Sans MS" HorizontalContentAlignment="Stretch" Padding="0" Foreground="#FFCBCBC8" VerticalAlignment="Top" RenderTransformOrigin="0.627,-3.331" Margin="41,9,186,0" FontSize="16" FontStyle="Italic"/>
+                        <Rectangle Fill="#FFF4F4F5" Stroke="Black"  Height="5" VerticalAlignment="Top" Width="171" Margin="113,18,10,0"/>
+                        <Button x:Name="buttonChooseSCFolder" Content="Browse"  Click="buttonChooseSCFolder_Click" FontFamily="Comic Sans MS" Background="#FFCBCBCB" VerticalAlignment="Top" Width="44" Height="21" Margin="240,54,10,0"/>
+                        <Rectangle Fill="#FFF4F4F5" Stroke="Black"  Height="5" VerticalAlignment="Top" Width="26" Margin="10,18,258,0"/>
+                    </Grid>
+
+                </StackPanel>
+            </ScrollViewer>
+        </TabItem>
+        <TabItem Header="Applications">
+            <TabItem.Tag>
+                <ImageSource>Resources/Matte-Applications-icon.png</ImageSource>
+            </TabItem.Tag>
+            <Canvas x:Name="applicationCanvas" Background="#FF353333">
+                <ScrollViewer VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Canvas.Left="10" Canvas.Top="83" Width="291" Height="206">
+                    <WrapPanel x:Name="apllicationStackPanel"  Background="#FF5D5959">
+                        <Button x:Name="addActionBubble"  Width="46" BorderBrush="{x:Null}" Height="46" Click="addActionBubble_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Resources/AddApp.png"/>
+                            </Button.Background>
+                        </Button>
+                    </WrapPanel>
+                </ScrollViewer>
+                <Rectangle x:Name="picDrag" Height="81" Canvas.Left="10" Width="291" Canvas.Top="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Resources/Drag2.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="46" Canvas.Left="248" Canvas.Top="302" Width="53" AllowDrop="True" DragOver="Rectangle_DragOver" Drop="Rectangle_Drop" >
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Resources/garbage1.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Border x:Name="appsNotification" BorderBrush="Black" CornerRadius="13" BorderThickness="1" Height="46" Canvas.Left="23" Canvas.Top="302" Width="225" Background="#FFF56B6B" Opacity="0">
+                    <TextBlock x:Name="appsNotificationText" TextWrapping="Wrap" Text="" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontFamily="Segoe Print" FontWeight="Bold"/>
+                </Border>
+
+            </Canvas>
+        </TabItem>
+        <TabItem Header="Support">
+            <TabItem.Tag>
+                <ImageSource>Resources/supportIcon.ico</ImageSource>
+            </TabItem.Tag>
+        </TabItem>
+    </TabControl>
+</UserControl>

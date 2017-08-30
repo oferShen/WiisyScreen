@@ -1,0 +1,6 @@
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\winMacros\bin\Debug\winMacros.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\winMacros\bin\Debug\winMacros.pdb
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\winMacros\bin\Debug\InputSimulator.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\winMacros\obj\Debug\winMacros.csprojResolveAssemblyReference.cache
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\winMacros\obj\Debug\winMacros.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\winMacros\obj\Debug\winMacros.pdb

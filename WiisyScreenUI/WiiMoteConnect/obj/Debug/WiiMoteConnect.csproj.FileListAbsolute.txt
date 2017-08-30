@@ -1,0 +1,15 @@
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\bin\Debug\WiiMoteConnect.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\bin\Debug\WiiMoteConnect.pdb
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\bin\Debug\InTheHand.Net.Personal.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\bin\Debug\WiimoteLib.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\bin\Debug\winMacros.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\bin\Debug\InputSimulator.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\bin\Debug\WiimoteLib.pdb
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\bin\Debug\winMacros.pdb
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\obj\Debug\WiiMoteConnect.csprojResolveAssemblyReference.cache
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\obj\Debug\WiiMoteConnect.g.resources
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\obj\Debug\WiiMoteConnect.Properties.Resources.resources
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\obj\Debug\WiiMoteConnect.WiiMoteControlls.CalibrationForm.resources
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\obj\Debug\WiiMoteConnect.csproj.GenerateResource.Cache
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\obj\Debug\WiiMoteConnect.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\WiiMoteConnect\obj\Debug\WiiMoteConnect.pdb

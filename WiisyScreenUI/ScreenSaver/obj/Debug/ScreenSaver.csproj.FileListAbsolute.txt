@@ -1,0 +1,6 @@
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\ScreenSaver\bin\Debug\ScreenSaver.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\ScreenSaver\bin\Debug\ScreenSaver.pdb
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\ScreenSaver\bin\Debug\itextsharp.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\ScreenSaver\obj\Debug\ScreenSaver.csprojResolveAssemblyReference.cache
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\ScreenSaver\obj\Debug\ScreenSaver.dll
+C:\Users\Ofer\Documents\FinalProject\src\WiisyScreenUI\ScreenSaver\obj\Debug\ScreenSaver.pdb
